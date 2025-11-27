@@ -5,20 +5,63 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
-
-.site-main{
-   width: 100%;
-   min-height: 100vh;
-   padding: 2rem;
-   box-sizing: border-box;
-   background-color: #B19476;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+/* Layout styles ------------------------------------------------------------------- */
+body {
+    background-color: #B19476;
+    margin: 0;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
-
-header.h1 {
-    background-color: red;
-    color: white;
+.outer-container {
+  margin:24px;
+  border: 1px solid #000000;
+  overflow: hidden;
 }
+
+.inner-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+section {
+    background: #F2E2DC;
+}
+
+.alt-section {
+    background: #383E56;
+    color: #F2E2DC
+}
+
+/* Header and footer styles -------------------------------------------------------- */
+ header, footer {
+    background: #383E56;
+    color: #F2E2DC;
+ }
+
+ header .container, 
+ footer.container,
+ header.alt-section .container,
+ footer.alt-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;}
+
+@media (max-width: 600px) {
+    .site-main {
+        padding: 1rem;}
+    .inner-box {
+       padding: 1rem; border-radius: 6px;}
+    }
