@@ -14,8 +14,15 @@ body {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
+}
+
+h2 {
+    font-family: "Notable", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    font-style: normal;
 }
 
 .outer-container {
@@ -33,12 +40,21 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
+    
 }
 
 section {
     background: #F2E2DC;
-    color: red;
+    padding: 6rem;
+    color:#383E56
 }
+
+section.introduction p {
+    max-width: 900px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
 
 .alt-section {
     background: #383E56;
@@ -49,13 +65,26 @@ section.alt-section {
     display: flex;
     align-items: left;
     justify-content: left;
-    padding: 0rem;
+    padding: 6rem;
+}
+
+section.resume {
+    display: block;
+    padding: 6rem;
+}
+
+section.resume .resume-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start; 
+}
+
+section.resume .col-left,
+section.resume .col-right {
 
 }
 
-introduction-section p {
-    color: red;
-}
 
 
 /* img styles -------------------------------------------------------- */
@@ -74,7 +103,7 @@ introduction-section p {
 
 /* Header and footer styles -------------------------------------------------------- */
 
-h1 a, h2 a, .site-header a {
+h1 a, h2 a, .site-header a, .site-footer a {
     text-decoration: none;
     color: inherit;
     font-family: "Notable", sans-serif;
@@ -86,8 +115,12 @@ h1 a, h2 a, .site-header a {
     font-size: 24px;
 }
 
+
+
 header a:hover,
-header a:focus {
+header a:focus,
+footer a:hover,
+footer a:focus {
     text-decoration: underline;
 }
 
@@ -116,10 +149,17 @@ footer.alt-section ul {
     display: flex;
     justify-content: flex-start;
     gap: 2rem;
-    font-weight: 300;
+    font-weight: 200;
     font-size: 12px;
     list-style: none;
-   
+}
+
+header ul,
+footer ul{
+   display: flex;
+   margin-left: 800px;
+   margin-top: -25px;
+   gap: 15px;
 }
 
 header li a,
@@ -139,3 +179,8 @@ footer.alt-section li a {
     .inner-box {
        padding: 1rem; border-radius: 6px;}
     }
+
+@media (max-width: 800px) {
+  .resume .resume-columns 
+  { grid-template-columns: 1fr; }
+}
