@@ -49,13 +49,6 @@ section {
     color:#383E56
 }
 
-section.introduction p {
-    max-width: 900px;
-    margin-right: 10%;
-    margin-left: 10%;
-}
-
-
 .alt-section {
     background: #383E56;
     color: #F2E2DC
@@ -67,6 +60,17 @@ section.alt-section {
     justify-content: left;
     padding: 6rem;
 }
+
+/* Introduction Section -------------------------------------------------------- */
+
+section.introduction p {
+    max-width: 900px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+
+/* Resume -------------------------------------------------------- */
 
 section.resume {
     display: block;
@@ -85,6 +89,17 @@ section.resume .col-right {
 
 }
 
+.resume-download {
+    display: inline-block;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #F2E2DC;
+    color: #383E56;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
 
 
 /* img styles -------------------------------------------------------- */
@@ -102,6 +117,9 @@ section.resume .col-right {
 
 
 /* Header and footer styles -------------------------------------------------------- */
+header ul,
+footer ul {
+}
 
 h1 a, h2 a, .site-header a, .site-footer a {
     text-decoration: none;
@@ -171,7 +189,7 @@ footer.alt-section li a {
     border: none;
 }
 
-
+/* Responsive styles -------------------------------------------------------- */
 
 @media (max-width: 600px) {
     .site-main {
