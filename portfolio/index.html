@@ -19,17 +19,18 @@
           <span class="site-name"><a href="index.html">Zac Harrison</a></span>
           <nav>
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="projects.html">Projects</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#resume">Resume</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
               <li><a href="assets/docs/Cover Letter.pdf">Cover Letter</a></li>
             </ul>
           </nav>
         </div>
       </header>
 
-      <section class="introduction">
+      <section id="home" class="introduction">
         <div class="container">
           <h2>Welcome To My Portfolio!</h2>
 
@@ -51,7 +52,7 @@
         </div>
       </section>
 
-      <section class="resume alt-section">
+      <section id="resume" class="resume alt-section">
         <div class="container">
           <h2>Resume</h2>
 
@@ -123,37 +124,53 @@
         </div>
       </section>
 
-      <section class="projects">
+      <section id="projects" class="projects">
         <div class="container">
           <h2>Projects</h2>
 
           <h3>Website</h3>
           <ul>
             <li><a href="https://zacact.github.io/it-pearl/self-web/home.html">IT Pearl – Self Web Design Project</a></li>
+            <p>A custom RDR2-themed web tool built with HTML, CSS, and JavaScript. Users enter a location, and the site generates a 7-day forecast using the Open-Meteo API, displayed as both a table and a dynamic line chart. This project blends interactive functionality with themed UI design.
+            </p>
             <li><a href="https://zacact.github.io/CyberChick2/">Cyber Chick – Buffalo's Edge Retreat</a></li>
+            <p>I led and designed this collaborative web project, shaping the concept, layout, and visual identity. I guided the team through structure, navigation, and styling decisions while contributing to front-end development. The project reflects my strengths in creative direction and team leadership.
+            </p>
           </ul>
 
           <h3>Programming</h3>
           <ul>
             <li><a href="https://zacact.github.io/it-pearl/circle/index.html">IT Pearl – Circle Calculations</a></li>
+            <p>A simple geometry calculator built with HTML, CSS, and JavaScript. Users input a radius, and the tool instantly displays the diameter, circumference, and area. Designed with clarity and ease of use in mind.
+            </p>
             <li><a href="https://zacact.github.io/it-pearl/caculator/caculator.html">IT Pearl – JavaScript Calculator</a></li>
+            <p>A four-function calculator developed using HTML, CSS, and JavaScript. Features a clean interface and real-time updates through DOM-based logic. Created to practice interactive front-end functionality.
+            </p>
           </ul>
 
           <h3>Soft Skills</h3>
           <ul>
             <li><a href="https://docs.google.com/presentation/d/1Sc1Zfy3zb3SNOL_4uKRe4y7onPZ0K1pkKEqmIg5b33s/edit?usp=sharing">Infographic</a></li>
+            <p>A self-designed academic presentation covering research, structure, and visual layout. I planned the content flow, created the slide designs, and organized information for clarity and readability.
+            </p>
             <li><a href="https://docs.google.com/presentation/d/1l8BDUZvS3yVaO1J95IrQzRDji5I87x9T/edit?usp=sharing&ouid=100095114040873678480&rtpof=true&sd=true">Website Presentation</a></li>
+            <p>Collaborated with a group to research, organize, and design a polished slide-deck presentation. Contributed to the structure, visuals, and refinement of key content sections, ensuring clarity and consistency across the team’s final deliverable.
+            </p>
           </ul>
 
           <h3>Database</h3>
           <ul>
             <li><a href="https://docs.google.com/spreadsheets/d/1HLerDtUQryfOWsv6OMeuJ6lbDjGkAxX-aAARVFX7oao/edit?usp=sharing">Ticket Sales</a></li>
+            <p>A clean, functional spreadsheet designed to track daily ticket sales by date and ticket type. I built formulas that automatically calculate totals and organize data for easy review, demonstrating my skills in logical data structuring and spreadsheet automation.
+            </p>
             <li><a href="https://docs.google.com/spreadsheets/d/1H_p6PItvd22xL1z2pB7KU7H0eqBjglcdgqyUY-RSkGY/edit?usp=sharing">Jewelry</a></li>
+            <p>A Google Sheets inventory tool that records item type, quantities, retail prices, and auto-calculates total inventory value. Built to present information easily at a glance, with formulas and formatting that support quick, accurate data insights.
+            </p>
           </ul>
         </div>
       </section>
 
-      <section class="about alt-section">
+      <section id="about" class="about alt-section">
         <div class="container">
           <img src="assets/img/pfp.jpg" alt="profile picture" class="pfp">
 
@@ -169,22 +186,54 @@
         </div>
       </section>
 
-      <section class="contact">
-        <div class="container">
-          <h2>Contact Me</h2>
-          <!-- You can add actual contact info or a form here later -->
-        </div>
-      </section>
+      <section id="contact" class="contact">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <p>If you’d like to connect about web design, collaboration, or opportunities, feel free to reach out using the form below.</p>
+
+    <form class="contact-form" action="https://formsubmit.co/zacharrison004@gmail.com" method="POST">
+      <!-- FormSubmit options -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="New Portfolio Contact Form Submission">
+      <input type="hidden" name="_template" value="table">
+      <!-- Optional: redirect URL after submit -->
+      <!-- <input type="hidden" name="_next" value="https://your-portfolio-url.com/thank-you.html"> -->
+
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="Name" required>
+      </div>
+
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="Email" required>
+      </div>
+
+      <div class="form-row">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="Subject">
+      </div>
+
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="Message" rows="5" required></textarea>
+      </div>
+
+      <button type="submit" class="btn-submit">Send Message</button>
+    </form>
+  </div>
+</section>
 
       <footer class="alt-section site-footer">
         <div class="container">
           <span class="site-name"><a href="index.html">Zac Harrison</a></span>
           <nav>
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About Me</a></li>
-              <li><a href="projects.html">Projects</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#resume">Resume</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
               <li><a href="assets/docs/Cover Letter.pdf">Cover Letter</a></li>
 
             </ul>

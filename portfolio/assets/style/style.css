@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *, *::before, *::after {
@@ -95,6 +96,83 @@ section.resume .resume-columns {
   font-size: 16px;
 }
 
+.resume-download:hover,
+.resume-download:focus {
+  background-color: #A45B48;
+}
+/* Contact -------------------------------------------------------- */
+.contact .container p {
+  max-width: 700px;
+  margin-bottom: 2rem;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea,
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #F2E2DC;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #383E56;
+  border: 1px solid #F2E2DC;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form .form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.contact-form label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  padding: 0.75rem;
+  border-radius: 4px;
+  border: 1px solid #383E56;
+  background-color: #F2E2DC;;
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #B19476;
+  background-color: #A45B48;
+  box-shadow: 0 0 0 2px rgba(177, 148, 118, 0.3);
+}
+
+.btn-submit {
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  background-color: #383E56;
+  color: #F2E2DC;
+  transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+  background-color: #A45B48;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-1px);
+}
 /* img styles -------------------------------------------------------- */
 
 .pfp {
@@ -162,7 +240,7 @@ header a:hover,
 header a:focus,
 footer a:hover,
 footer a:focus {
-  text-decoration: underline;
+  color:#A45B48;
 }
 
 /* Responsive styles -------------------------------------------------------- */
