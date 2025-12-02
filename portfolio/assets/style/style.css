@@ -39,6 +39,11 @@ h2 {
   font-size: 16px;
 }
 
+.button:hover,
+.button:focus {
+  background-color: #A45B48;
+}
+
 .outer-container {
   margin: 24px;
   border: 1px solid #000000;
@@ -216,7 +221,7 @@ section.resume .resume-columns {
   border-radius: 50%;
   object-fit: cover;
   margin-right: 4rem;
-  border: 4px solid #383E56;
+  border: 4px solid #A45B48;
 }
 
 /* Header and footer styles -------------------------------------------------------- */
