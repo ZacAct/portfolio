@@ -27,6 +27,18 @@ h2 {
   font-style: normal;
 }
 
+.button {
+  display: inline-block;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #383E56;
+  color: #F2E2DC;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
 .outer-container {
   margin: 24px;
   border: 1px solid #000000;
@@ -70,6 +82,7 @@ section.introduction p {
   margin-left: 10%;
 }
 
+
 /* Resume -------------------------------------------------------- */
 
 section.resume {
@@ -100,17 +113,15 @@ section.resume .resume-columns {
 .resume-download:focus {
   background-color: #A45B48;
 }
+
 /* Contact -------------------------------------------------------- */
 .contact .container p {
   max-width: 700px;
   margin-bottom: 2rem;
 }
 
-.contact-form label,
-.contact-form input,
-.contact-form textarea,
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
+/* Labels stay light on dark card */
+.contact-form label {
   color: #F2E2DC;
 }
 
@@ -142,15 +153,27 @@ section.resume .resume-columns {
   padding: 0.75rem;
   border-radius: 4px;
   border: 1px solid #383E56;
-  background-color: #F2E2DC;;
+  background-color: #F2E2DC;
   outline: none;
+  color: #383E56; /* readable text color */
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #7a6b62; /* softer placeholder color */
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #B19476;
-  background-color: #A45B48;
-  box-shadow: 0 0 0 2px rgba(177, 148, 118, 0.3);
+  border-color: #A45B48;
+  background-color: #F8EFE7;
+  box-shadow: 0 0 0 3px rgba(164, 91, 72, 0.4);
+}
+
+.contact-form input:focus-visible,
+.contact-form textarea:focus-visible {
+  outline: 2px solid #A45B48;
+  outline-offset: 2px;
 }
 
 .btn-submit {
@@ -173,6 +196,7 @@ section.resume .resume-columns {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transform: translateY(-1px);
 }
+
 /* img styles -------------------------------------------------------- */
 
 .pfp {
@@ -250,7 +274,7 @@ header a:hover,
 header a:focus,
 footer a:hover,
 footer a:focus {
-  color:#A45B48;
+  color: #A45B48;
 }
 
 /* Responsive styles -------------------------------------------------------- */
@@ -264,10 +288,13 @@ footer a:focus {
     grid-template-columns: 1fr;
   }
 
-  .pfp {
+  .pfp,
+  .fall {
     float: none;
     display: block;
     margin: 0 auto 2rem auto;
+    width: 260px;
+    height: 260px;
   }
 
   header .container,
@@ -293,3 +320,4 @@ footer a:focus {
     font-size: 16px;
   }
 }
+
